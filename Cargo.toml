@@ -1,0 +1,22 @@
+[package]
+name = "text-rescue-web"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = {version = "0.5.0-rc.2", features = ["json"]}
+serde = "1.0.136"
+dotenv = "0.15.0"
+validator = { version = "0.15", features = ["derive"] }
+lazy_static = "1.4.0"
+regex = "1.9.3"
+bcrypt = "0.15.0"
+rocket_cors = "0.6.0-alpha2"
+chrono = { version = "0.4.30", features = ["serde"] }
+
+[dependencies.mongodb]
+version = "2.2.0"
+default-features = false
+features = ["sync"] 
